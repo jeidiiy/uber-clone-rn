@@ -1,7 +1,8 @@
-import React from 'react'
-import { Image, SafeAreaView, StyleSheet, Text, View } from 'react-native'
-import tw from 'tailwind-react-native-classnames'
-import GlobalStyles from '../GlobalStyles'
+import React from 'react';
+import { Image, SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import tw from 'tailwind-react-native-classnames';
+import NavOptions from '../components/NavOptions';
+import GlobalStyles from '../GlobalStyles';
 
 const HomeScreen = () => {
   return (
@@ -13,15 +14,16 @@ const HomeScreen = () => {
             uri: 'https://links.papareact.com/gzs',
           }}
         />
+        <NavOptions />
       </View>
     </SafeAreaView>
-  )
-}
+  );
+};
 
-export default HomeScreen
+export default HomeScreen;
 
 const styles = StyleSheet.create({
   text: {
     color: 'blue',
   },
-})
+});

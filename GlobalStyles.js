@@ -1,4 +1,4 @@
-import { Platform, StyleSheet } from 'react-native'
+import { Platform, StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
   AndroidSafeArea: {
@@ -6,4 +6,4 @@ export default StyleSheet.create({
     backgroundColor: 'white',
     paddingTop: Platform.OS === 'android' ? 25 : 0,
   },
-})
+});
